@@ -95,26 +95,28 @@
   }
 }
 
-.binary-bit {
-  @apply w-8 h-8 flex items-center justify-center border border-network-DEFAULT rounded-md font-mono transition-all;
-}
+@layer components {
+  .binary-bit {
+    @apply w-8 h-8 flex items-center justify-center border border-network rounded-md font-mono transition-all;
+  }
 
-.octet-container {
-  @apply flex space-x-1 mr-2;
-}
+  .octet-container {
+    @apply flex space-x-1 mr-2;
+  }
 
-.binary-bit.active {
-  @apply bg-network-DEFAULT text-white;
-}
+  .binary-bit.active {
+    @apply bg-network text-white;
+  }
 
-.network-table th {
-  @apply bg-network-light text-network-dark px-4 py-2;
-}
+  .network-table th {
+    @apply bg-network-light text-network-dark px-4 py-2;
+  }
 
-.network-table td {
-  @apply px-4 py-2 border border-network-light;
-}
+  .network-table td {
+    @apply px-4 py-2 border border-network-light;
+  }
 
-.network-table tr:nth-child(even) {
-  @apply bg-gray-50;
+  .network-table tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
 }
