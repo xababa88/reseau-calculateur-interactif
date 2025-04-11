@@ -125,7 +125,7 @@ const PracticeExercises: React.FC = () => {
             
             <Button 
               onClick={generateNewExercises} 
-              className="w-full md:w-auto bg-network-DEFAULT hover:bg-network-dark"
+              className="w-full md:w-auto bg-network hover:bg-network-dark"
             >
               <RefreshCw className="w-4 h-4 mr-2" /> Générer des exercices
             </Button>
@@ -228,7 +228,7 @@ const PracticeExercises: React.FC = () => {
                   {!userAnswers.submitted ? (
                     <Button 
                       onClick={handleSubmit} 
-                      className="bg-network-DEFAULT hover:bg-network-dark"
+                      className="bg-network hover:bg-network-dark"
                       disabled={
                         !isValidIp(userAnswers.networkAddress) || 
                         !isValidIp(userAnswers.broadcastAddress)
@@ -239,7 +239,7 @@ const PracticeExercises: React.FC = () => {
                   ) : (
                     <Button 
                       onClick={handleNextExercise}
-                      className="bg-network-DEFAULT hover:bg-network-dark"
+                      className="bg-network hover:bg-network-dark"
                     >
                       Exercice suivant
                     </Button>
@@ -250,7 +250,13 @@ const PracticeExercises: React.FC = () => {
           ) : (
             <div className="text-center py-8">
               <p className="text-gray-500 mb-4">Aucun exercice généré pour le moment.</p>
-              <p className="text-sm">Sélectionnez une difficulté et cliquez sur "Générer des exercices".</p>
+              <Button 
+                onClick={generateNewExercises} 
+                className="bg-network hover:bg-network-dark"
+                size="lg"
+              >
+                <RefreshCw className="w-5 h-5 mr-2" /> Générer des exercices
+              </Button>
             </div>
           )}
         </CardContent>

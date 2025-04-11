@@ -32,56 +32,56 @@ const Tutorial: React.FC = () => {
                   <div className="flex flex-wrap justify-center gap-2 font-mono text-sm">
                     <div className="flex flex-col items-center">
                       <div className="flex">
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
                       </div>
                       <span className="mt-1 text-network-text">192</span>
                     </div>
                     <span className="text-xl">.</span>
                     <div className="flex flex-col items-center">
                       <div className="flex">
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
                       </div>
                       <span className="mt-1 text-network-text">168</span>
                     </div>
                     <span className="text-xl">.</span>
                     <div className="flex flex-col items-center">
                       <div className="flex">
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
                       </div>
                       <span className="mt-1 text-network-text">1</span>
                     </div>
                     <span className="text-xl">.</span>
                     <div className="flex flex-col items-center">
                       <div className="flex">
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">1</span>
-                        <span className="w-7 h-7 flex items-center justify-center border border-network-DEFAULT bg-network-DEFAULT text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">1</span>
+                        <span className="w-7 h-7 flex items-center justify-center border border-network bg-network text-white rounded-sm">0</span>
                       </div>
                       <span className="mt-1 text-network-text">2</span>
                     </div>
@@ -144,18 +144,18 @@ const Tutorial: React.FC = () => {
             
             <TabsContent value="calculations" className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-network-dark mb-3">Étape 1: Conversion en binaire</h3>
-                <p className="mb-3">
+                <h3 className="text-xl font-semibold text-network-dark mb-3">Étape 1: Conversion en binaire</h3>
+                <p className="mb-3 text-base">
                   Convertissez l'adresse IP et le masque de sous-réseau en notation binaire:
                 </p>
                 <div className="p-4 bg-network-light rounded-md my-4">
                   <div className="mb-3">
-                    <p className="text-sm font-medium mb-1">Adresse IP: 192.168.1.10</p>
-                    <p className="font-mono text-sm">11000000.10101000.00000001.00001010</p>
+                    <p className="text-base font-medium mb-1">Adresse IP: 192.168.1.10</p>
+                    <p className="font-mono text-base md:text-lg">11000000.10101000.00000001.00001010</p>
                   </div>
                   <div>
-                    <p className="text-sm font-medium mb-1">Masque: 255.255.255.0 (ou /24)</p>
-                    <p className="font-mono text-sm">11111111.11111111.11111111.00000000</p>
+                    <p className="text-base font-medium mb-1">Masque: 255.255.255.0 (ou /24)</p>
+                    <p className="font-mono text-base md:text-lg">11111111.11111111.11111111.00000000</p>
                   </div>
                 </div>
               </div>
@@ -163,85 +163,89 @@ const Tutorial: React.FC = () => {
               <Separator />
               
               <div>
-                <h3 className="text-lg font-semibold text-network-dark mb-3">Étape 2: Calcul de l'adresse réseau</h3>
-                <p className="mb-3">
+                <h3 className="text-xl font-semibold text-network-dark mb-3">Étape 2: Calcul de l'adresse réseau</h3>
+                <p className="mb-3 text-base">
                   Effectuez un ET logique bit par bit entre l'adresse IP et le masque:
                 </p>
-                <div className="p-4 bg-network-light rounded-md my-4 font-mono text-sm">
-                  <p className="mb-1">   IP: 11000000.10101000.00000001.00001010</p>
-                  <p className="mb-1">Masque: 11111111.11111111.11111111.00000000</p>
-                  <div className="my-1 border-t border-network-DEFAULT"></div>
-                  <p>Réseau: 11000000.10101000.00000001.00000000</p>
-                  <p className="mt-2 text-network-text">(192.168.1.0)</p>
+                <div className="p-6 bg-network-light rounded-md my-4 font-mono text-base md:text-lg">
+                  <p className="mb-2">   IP: 11000000.10101000.00000001.00001010</p>
+                  <p className="mb-2">Masque: 11111111.11111111.11111111.00000000</p>
+                  <div className="my-2 border-t-2 border-network"></div>
+                  <p className="font-bold">Réseau: 11000000.10101000.00000001.00000000</p>
+                  <p className="mt-3 text-network-text font-bold">(192.168.1.0)</p>
                 </div>
-                <p className="text-sm mb-2">
-                  <span className="font-medium">Règle</span>: Pour chaque position de bit:
-                </p>
-                <ul className="list-disc list-inside text-sm mb-4">
-                  <li>1 ET 1 = 1</li>
-                  <li>1 ET 0 = 0</li>
-                  <li>0 ET 1 = 0</li>
-                  <li>0 ET 0 = 0</li>
-                </ul>
+                <div className="p-4 bg-white border border-network-light rounded-md">
+                  <p className="font-medium mb-2 text-base">
+                    Règle du ET logique:
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-base">
+                    <div className="p-2 bg-gray-50 rounded text-center">1 ET 1 = 1</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">1 ET 0 = 0</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">0 ET 1 = 0</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">0 ET 0 = 0</div>
+                  </div>
+                </div>
               </div>
               
               <Separator />
               
               <div>
-                <h3 className="text-lg font-semibold text-network-dark mb-3">Étape 3: Calcul de l'adresse de diffusion</h3>
-                <p className="mb-3">
+                <h3 className="text-xl font-semibold text-network-dark mb-3">Étape 3: Calcul de l'adresse de diffusion</h3>
+                <p className="mb-3 text-base">
                   Effectuez un OU logique bit par bit entre l'adresse réseau et l'inverse du masque:
                 </p>
-                <div className="p-4 bg-network-light rounded-md my-4 font-mono text-sm">
-                  <p className="mb-1">      Réseau: 11000000.10101000.00000001.00000000</p>
-                  <p className="mb-1">Inverse masque: 00000000.00000000.00000000.11111111</p>
-                  <div className="my-1 border-t border-network-DEFAULT"></div>
-                  <p>     Diffusion: 11000000.10101000.00000001.11111111</p>
-                  <p className="mt-2 text-network-text">(192.168.1.255)</p>
+                <div className="p-6 bg-network-light rounded-md my-4 font-mono text-base md:text-lg">
+                  <p className="mb-2">      Réseau: 11000000.10101000.00000001.00000000</p>
+                  <p className="mb-2">Inverse masque: 00000000.00000000.00000000.11111111</p>
+                  <div className="my-2 border-t-2 border-network"></div>
+                  <p className="font-bold">     Diffusion: 11000000.10101000.00000001.11111111</p>
+                  <p className="mt-3 text-network-text font-bold">(192.168.1.255)</p>
                 </div>
-                <p className="text-sm mb-2">
-                  <span className="font-medium">Règle</span>: Pour chaque position de bit:
-                </p>
-                <ul className="list-disc list-inside text-sm">
-                  <li>1 OU 1 = 1</li>
-                  <li>1 OU 0 = 1</li>
-                  <li>0 OU 1 = 1</li>
-                  <li>0 OU 0 = 0</li>
-                </ul>
+                <div className="p-4 bg-white border border-network-light rounded-md">
+                  <p className="font-medium mb-2 text-base">
+                    Règle du OU logique:
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-base">
+                    <div className="p-2 bg-gray-50 rounded text-center">1 OU 1 = 1</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">1 OU 0 = 1</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">0 OU 1 = 1</div>
+                    <div className="p-2 bg-gray-50 rounded text-center">0 OU 0 = 0</div>
+                  </div>
+                </div>
               </div>
               
               <Separator />
               
               <div>
-                <h3 className="text-lg font-semibold text-network-dark mb-3">Étape 4: Détermination de la plage d'adresses</h3>
-                <div className="space-y-3">
-                  <div className="p-3 border border-network-light rounded-md">
-                    <p className="font-medium">Adresse réseau</p>
-                    <p className="font-mono">192.168.1.0</p>
+                <h3 className="text-xl font-semibold text-network-dark mb-3">Étape 4: Détermination de la plage d'adresses</h3>
+                <div className="space-y-4">
+                  <div className="p-4 border-2 border-network-light rounded-md">
+                    <p className="font-medium text-lg">Adresse réseau</p>
+                    <p className="font-mono text-lg md:text-xl">192.168.1.0</p>
                   </div>
                   
-                  <div className="p-3 border border-network-light rounded-md">
-                    <p className="font-medium">Première adresse utilisable</p>
-                    <p className="font-mono">192.168.1.1</p>
-                    <p className="text-xs text-gray-500">(adresse réseau + 1)</p>
+                  <div className="p-4 border-2 border-network-light rounded-md">
+                    <p className="font-medium text-lg">Première adresse utilisable</p>
+                    <p className="font-mono text-lg md:text-xl">192.168.1.1</p>
+                    <p className="text-sm text-gray-500">(adresse réseau + 1)</p>
                   </div>
                   
-                  <div className="p-3 border border-network-light rounded-md">
-                    <p className="font-medium">Dernière adresse utilisable</p>
-                    <p className="font-mono">192.168.1.254</p>
-                    <p className="text-xs text-gray-500">(adresse de diffusion - 1)</p>
+                  <div className="p-4 border-2 border-network-light rounded-md">
+                    <p className="font-medium text-lg">Dernière adresse utilisable</p>
+                    <p className="font-mono text-lg md:text-xl">192.168.1.254</p>
+                    <p className="text-sm text-gray-500">(adresse de diffusion - 1)</p>
                   </div>
                   
-                  <div className="p-3 border border-network-light rounded-md">
-                    <p className="font-medium">Adresse de diffusion</p>
-                    <p className="font-mono">192.168.1.255</p>
+                  <div className="p-4 border-2 border-network-light rounded-md">
+                    <p className="font-medium text-lg">Adresse de diffusion</p>
+                    <p className="font-mono text-lg md:text-xl">192.168.1.255</p>
                   </div>
                   
-                  <div className="p-3 bg-network-light rounded-md">
-                    <p className="font-medium">Nombre d'adresses utilisables</p>
-                    <p>254</p>
-                    <p className="text-xs text-gray-600">(2³² ⁻ ²⁴ - 2)</p>
-                    <p className="text-xs text-gray-600">(2⁸ - 2)</p>
+                  <div className="p-4 bg-network-light rounded-md">
+                    <p className="font-medium text-lg">Nombre d'adresses utilisables</p>
+                    <p className="text-lg md:text-xl">254</p>
+                    <p className="text-sm text-gray-600">(2³² ⁻ ²⁴ - 2)</p>
+                    <p className="text-sm text-gray-600">(2⁸ - 2)</p>
                   </div>
                 </div>
               </div>
