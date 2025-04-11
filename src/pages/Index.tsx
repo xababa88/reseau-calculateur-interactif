@@ -1,11 +1,12 @@
 
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Calculator, Network, BookOpen, GraduationCap } from "lucide-react";
+import { Calculator, Network, BookOpen, GraduationCap, Layers } from "lucide-react";
 import BinaryConverter from '@/components/BinaryConverter';
 import IPCalculator from '@/components/IPCalculator';
 import PracticeExercises from '@/components/PracticeExercises';
 import Tutorial from '@/components/Tutorial';
+import SubnetDivider from '@/components/SubnetDivider';
 
 const Index = () => {
   return (
@@ -21,12 +22,15 @@ const Index = () => {
       
       <main className="container mx-auto px-4 py-8">
         <Tabs defaultValue="calculator" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-4 mb-8">
+          <TabsList className="grid w-full grid-cols-1 md:grid-cols-5 mb-8">
             <TabsTrigger value="calculator" className="flex items-center gap-2">
               <Calculator className="h-4 w-4" /> Calculateur
             </TabsTrigger>
             <TabsTrigger value="binary" className="flex items-center gap-2">
               <Network className="h-4 w-4" /> Convertisseur Binaire
+            </TabsTrigger>
+            <TabsTrigger value="subnetting" className="flex items-center gap-2">
+              <Layers className="h-4 w-4" /> Découpage
             </TabsTrigger>
             <TabsTrigger value="practice" className="flex items-center gap-2">
               <GraduationCap className="h-4 w-4" /> Exercices
@@ -42,6 +46,10 @@ const Index = () => {
           
           <TabsContent value="binary">
             <BinaryConverter />
+          </TabsContent>
+          
+          <TabsContent value="subnetting">
+            <SubnetDivider />
           </TabsContent>
           
           <TabsContent value="practice">

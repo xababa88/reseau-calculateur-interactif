@@ -197,3 +197,100 @@ export const isValidSubnetMask = (subnetMask: string): boolean => {
     return false;
   }
 };
+
+// NEW FUNCTIONS FOR SUBNET DIVISION:
+
+// Calculate the CIDR needed for a specific number of subnets
+export const calculateSubnetCidr = (originalCidr: number, numSubnets: number): number => {
+  try {
+    // Calculate how many bits we need to borrow for the subnets
+    const bitsNeeded = Math.ceil(Math.log2(numSubnets));
+    return Math.min(originalCidr + bitsNeeded, 30);
+  } catch (error) {
+    console.error("Error calculating subnet CIDR:", error);
+    return originalCidr;
+  }
+};
+
+// Generate subnets from a network address and required number of subnets
+export interface Subnet {
+  index: number;
+  networkAddress: string;
+  subnetMask: string;
+  cidr: number;
+  broadcastAddress: string;
+  firstHost: string;
+  lastHost: string;
+  numHosts: number;
+}
+
+export const divideNetworkIntoSubnets = (
+  networkAddress: string,
+  originalCidr: number,
+  numSubnets: number
+): Subnet[] => {
+  try {
+    // Calculate the new CIDR for subnets
+    const newCidr = calculateSubnetCidr(originalCidr, numSubnets);
+    const subnetMask = cidrToSubnetMask(newCidr);
+    
+    // Calculate how many actual subnets we'll create with new CIDR
+    const actualSubnets = Math.pow(2, newCidr - originalCidr);
+    
+    // Convert network address to binary to manipulate bits
+    const binaryOctets = ipToBinary(networkAddress);
+    let binaryNetwork = binaryOctets.join('');
+    
+    // Generate each subnet
+    const subnets: Subnet[] = [];
+    
+    for (let i = 0; i < actualSubnets; i++) {
+      // Calculate subnet bits and append to original network portion
+      const subnetBits = i.toString(2).padStart(newCidr - originalCidr, '0');
+      let newNetworkBinary = binaryNetwork.substring(0, originalCidr) + subnetBits;
+      
+      // Fill in the host portion with zeros
+      while (newNetworkBinary.length < 32) {
+        newNetworkBinary += '0';
+      }
+      
+      // Convert binary back to IP address
+      const subnetNetworkAddress = binaryToIp([
+        newNetworkBinary.substring(0, 8),
+        newNetworkBinary.substring(8, 16),
+        newNetworkBinary.substring(16, 24),
+        newNetworkBinary.substring(24, 32)
+      ]);
+      
+      const broadcastAddress = calculateBroadcastAddress(subnetNetworkAddress, subnetMask);
+      const firstHost = calculateFirstHostAddress(subnetNetworkAddress);
+      const lastHost = calculateLastHostAddress(broadcastAddress);
+      const numHosts = calculateNumberOfHosts(newCidr);
+      
+      subnets.push({
+        index: i + 1,
+        networkAddress: subnetNetworkAddress,
+        subnetMask,
+        cidr: newCidr,
+        broadcastAddress,
+        firstHost,
+        lastHost,
+        numHosts,
+      });
+      
+      // Stop if we've generated enough subnets
+      if (subnets.length >= numSubnets) break;
+    }
+    
+    return subnets;
+  } catch (error) {
+    console.error("Error dividing network into subnets:", error);
+    return [];
+  }
+};
+
+export const getMaxPossibleSubnets = (originalCidr: number): number => {
+  // Maximum CIDR is 30 (leaving 2 addresses per subnet, network + broadcast)
+  const maxBorrowedBits = 30 - originalCidr;
+  return Math.pow(2, maxBorrowedBits);
+};
